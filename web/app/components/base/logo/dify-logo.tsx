@@ -14,9 +14,9 @@ export const logoPathMap: Record<LogoStyle, string> = {
 export type LogoSize = 'large' | 'medium' | 'small'
 
 export const logoSizeMap: Record<LogoSize, string> = {
-  large: 'w-16 h-7',
-  medium: 'w-12 h-[22px]',
-  small: 'w-9 h-4',
+  large: 'w-[140px] h-7',
+  medium: 'w-[120px] h-[22px]',
+  small: 'w-[100px] h-4',
 }
 
 type DifyLogoProps = {
@@ -37,7 +37,7 @@ const DifyLogo: FC<DifyLogoProps> = ({
     <img
       src={`${basePath}${logoPathMap[themedStyle]}`}
       className={cn('block object-contain', logoSizeMap[size], className)}
-      alt="Dify logo"
+      alt="VIZEN.agents logo"
     />
   )
 }
