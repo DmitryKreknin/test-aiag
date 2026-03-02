@@ -42,7 +42,7 @@ dependencies = [
     "opik~=1.8.72",
     "litellm==1.77.1",                                  # Pinned to avoid madoka dependency issue
     "opentelemetry-api==1.27.0",
-    "opentelemetry-distro==0.48b0",
+    "opentelemetry-distro==0.60b1",
     "opentelemetry-exporter-otlp==1.27.0",
     "opentelemetry-exporter-otlp-proto-common==1.27.0",
     "opentelemetry-exporter-otlp-proto-grpc==1.27.0",
