@@ -310,8 +310,8 @@ importers:
         specifier: 8.5.9
         version: 8.5.9(@types/react@19.2.9)(react@19.2.4)
       react-window:
-        specifier: 1.8.11
-        version: 1.8.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+        specifier: 2.2.7
+        version: 2.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       reactflow:
         specifier: 11.11.4
         version: 11.11.4(@types/react@19.2.9)(immer@11.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -491,8 +491,8 @@ importers:
         specifier: 15.5.13
         version: 15.5.13
       '@types/react-window':
-        specifier: 1.8.8
-        version: 1.8.8
+        specifier: 2.0.0
+        version: 2.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       '@types/semver':
         specifier: 7.7.1
         version: 7.7.1
@@ -3352,8 +3352,9 @@ packages:
   '@types/react-syntax-highlighter@15.5.13':
     resolution: {integrity: sha512-uLGJ87j6Sz8UaBAooU0T6lWJ0dBmjZgN1PZTrj05TNql2/XpC6+4HhMT5syIdFUUt+FASfCeLLv4kBygNU+8qA==}
 
-  '@types/react-window@1.8.8':
-    resolution: {integrity: sha512-8Ls660bHR1AUA2kuRvVG9D/4XpRC6wjAaPT9dil7Ckc76eP9TKWZwwmgfq8Q1LANX3QNDnoU4Zp48A3w+zK69Q==}
+  '@types/react-window@2.0.0':
+    resolution: {integrity: sha512-E8hMDtImEpMk1SjswSvqoSmYvk7GEtyVaTa/GJV++FdDNuMVVEzpAClyJ0nqeKYBrMkGiyH6M1+rPLM0Nu1exQ==}
+    deprecated: This is a stub types definition. react-window provides its own type definitions, so you do not need this installed.
 
   '@types/react@19.2.9':
     resolution: {integrity: sha512-Lpo8kgb/igvMIPeNV2rsYKTgaORYdO1XGVZ4Qz3akwOj0ySGYMPlQWa8BaLn0G63D1aSaAQ5ldR06wCpChQCjA==}
@@ -4582,6 +4583,10 @@ packages:
     resolution: {integrity: sha512-phv3E1Xl4tQOShqSte26C7Fl84EwUdZsyOuSSk9qtAGyyQs2s3jJzComh+Abf4g187lUUAvH+H26omrqia2aGg==}
     engines: {node: '>=10.13.0'}
 
+  enhanced-resolve@5.20.0:
+    resolution: {integrity: sha512-/ce7+jQ1PQ6rVXwe+jKEg5hW5ciicHwIQUagZkp6IufBoY3YDgdTTY1azVs0qoRgVmvsNB+rbjLJxDAeHHtwsQ==}
+    engines: {node: '>=10.13.0'}
+
   entities@4.5.0:
     resolution: {integrity: sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==}
     engines: {node: '>=0.12'}
@@ -4678,7 +4683,7 @@ packages:
       eslint: '*'
 
   eslint-plugin-better-tailwindcss@https://pkg.pr.new/hyoban/eslint-plugin-better-tailwindcss@a520d15:
-    resolution: {integrity: sha512-hbxpqInIW0Q5UIwXEuQxSBjrMd5bYttXeSPU6dfK2zpECKNIzGR+KXZZEdZaPagEMDJosSyQ9RKievmBcCAxfA==, tarball: https://pkg.pr.new/hyoban/eslint-plugin-better-tailwindcss@a520d15}
+    resolution: {tarball: https://pkg.pr.new/hyoban/eslint-plugin-better-tailwindcss@a520d15}
     version: 4.3.1
     engines: {node: ^20.19.0 || ^22.12.0 || >=23.0.0}
     peerDependencies:
@@ -5880,9 +5885,6 @@ packages:
   mdn-data@2.23.0:
     resolution: {integrity: sha512-786vq1+4079JSeu2XdcDjrhi/Ry7BWtjDl9WtGPWLiIHb2T66GvIVflZTBoSNZ5JqTtJGYEVMuFA/lbQlMOyDQ==}
 
-  memoize-one@5.2.1:
-    resolution: {integrity: sha512-zYiwtZUcYyXKo/np96AGZAckk+FWWsUdJ3cHGGmld7+AhvcWmQyGCYUh1hc4Q/pkOhb65dQR/pqCyK0cOaHz4Q==}
-
   merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
 
@@ -6731,12 +6733,11 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  react-window@1.8.11:
-    resolution: {integrity: sha512-+SRbUVT2scadgFSWx+R1P754xHPEqvcfSfVX10QYg6POOz+WNgkN48pS+BtZNIMGiL1HYrSEiCkwsMS15QogEQ==}
-    engines: {node: '>8.0.0'}
+  react-window@2.2.7:
+    resolution: {integrity: sha512-SH5nvfUQwGHYyriDUAOt7wfPsfG9Qxd6OdzQxl5oQ4dsSsUicqQvjV7dR+NqZ4coY0fUn3w1jnC5PwzIUWEg5w==}
     peerDependencies:
-      react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-      react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react: ^18.0.0 || ^19.0.0
+      react-dom: ^18.0.0 || ^19.0.0
 
   react@19.2.4:
     resolution: {integrity: sha512-9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==}
@@ -10894,9 +10895,12 @@ snapshots:
     dependencies:
       '@types/react': 19.2.9
 
-  '@types/react-window@1.8.8':
+  '@types/react-window@2.0.0(react-dom@19.2.4(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@types/react': 19.2.9
+      react-window: 2.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
+    transitivePeerDependencies:
+      - react
+      - react-dom
 
   '@types/react@19.2.9':
     dependencies:
@@ -12247,6 +12251,11 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.3.0
 
+  enhanced-resolve@5.20.0:
+    dependencies:
+      graceful-fs: 4.2.11
+      tapable: 2.3.0
+
   entities@4.5.0: {}
 
   entities@6.0.1: {}
@@ -12796,7 +12805,7 @@ snapshots:
     dependencies:
       acorn: 8.16.0
       acorn-jsx: 5.3.2(acorn@8.16.0)
-      eslint-visitor-keys: 5.0.0
+      eslint-visitor-keys: 5.0.1
 
   espree@11.1.1:
     dependencies:
@@ -13916,8 +13925,6 @@ snapshots:
 
   mdn-data@2.23.0: {}
 
-  memoize-one@5.2.1: {}
-
   merge-stream@2.0.0: {}
 
   merge2@1.4.1: {}
@@ -14973,10 +14980,8 @@ snapshots:
     transitivePeerDependencies:
       - '@types/react'
 
-  react-window@1.8.11(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
+  react-window@2.2.7(react-dom@19.2.4(react@19.2.4))(react@19.2.4):
     dependencies:
-      '@babel/runtime': 7.28.6
-      memoize-one: 5.2.1
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
@@ -16136,7 +16141,7 @@ snapshots:
       acorn-import-phases: 1.0.4(acorn@8.16.0)
       browserslist: 4.28.1
       chrome-trace-event: 1.0.4
-      enhanced-resolve: 5.19.0
+      enhanced-resolve: 5.20.0
       es-module-lexer: 2.0.0
       eslint-scope: 5.1.1
       events: 3.3.0
